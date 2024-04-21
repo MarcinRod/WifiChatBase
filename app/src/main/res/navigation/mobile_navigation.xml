@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/discoveryFragment">
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.wifichat.ui.chat.ChatFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="wifiDirectInfo"
+            app:argType="android.net.wifi.p2p.WifiP2pInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/discoveryFragment"
+        android:name="com.example.wifichat.ui.discovery.DiscoveryFragment"
+        android:label="DiscoveryFragment"
+        tools:layout="@layout/fragment_discovery" >
+        <action
+            android:id="@+id/action_discoveryFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+
+
+</navigation>

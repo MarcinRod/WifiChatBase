@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">WifiChat</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="message">Message</string>
+    <string name="connected">Connected</string>
+    <string name="enable_wifi_msg">Please enable WiFi</string>
+    <string name="enable_wifi_action">Enable</string>
+    <string name="permissions_are_denied_msg">One or more permissions are denied.</string>
+    <string name="wifi_is_enabled">WiFi is enabled</string>
+    <string name="wifi_is_disabled">WiFi is disabled</string>
+    <string name="not_show_msg">Don\'t show again</string>
+    <string name="connected_status">Connected</string>
+    <string name="invited_status">Invited</string>
+    <string name="failed_status">Failed</string>
+    <string name="available_status">Available</string>
+    <string name="unavailable_status">Unavailable</string>
+    <string name="unknown_status">Unknown</string>
+    <string name="discovering_peers_msg">Discovering peers</string>
+    <string name="failed_to_discover_peers_format">Failed to discover peers: %1$s</string>
+    <string name="general_error_fail_reason">General error occurred</string>
+    <string name="wi_fi_direct_is_not_supported_fail_reason">Wi-Fi Direct is not supported on this device</string>
+    <string name="framework_is_busy_fail_reason">Framework is busy and unable to service the request</string>
+    <string name="no_service_requests_fail_reason">No service requests are added</string>
+    <string name="unknown_error_fail_reason">Unknown error occurred</string>
+    <string name="discovery_stopped">Discovery stopped</string>
+    <string name="discovery_stop_failed">Discovery stop failed</string>
+    <string name="connect_failed_msg">Connect failed. Retry.</string>
+    <string name="send_image">Send Image</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="discover">Discover</string>
+    <string name="stop_discovery">Stop Discovery</string>
+</resources>
