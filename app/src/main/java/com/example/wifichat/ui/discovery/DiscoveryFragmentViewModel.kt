@@ -49,6 +49,7 @@ class DiscoveryFragmentViewModel: ViewModel(){
     private fun clear(){
 
     }
+
     /**
      * Resets the view model.
      */

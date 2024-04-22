@@ -49,7 +49,6 @@ class DiscoveryFragment : Fragment(), WiFiDirectBroadcastReceiver.WifiDirectPeer
     // Adapter for the RecyclerView
     private val peersAdapter = PeersRecyclerViewAdapter()
 
-
     // Flag used to indicate whether listeners have been set for the WifiDirectBroadcastReceiver
     private var wifiIsSetup = false
     override fun onCreateView(
