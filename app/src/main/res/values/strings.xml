@@ -20,7 +20,7 @@
     <string name="discovering_peers_msg">Discovering peers</string>
     <string name="failed_to_discover_peers_format">Failed to discover peers: %1$s</string>
     <string name="general_error_fail_reason">General error occurred</string>
-    <string name="wi_fi_direct_is_not_supported_fail_reason">Wi-Fi Direct is not supported on this device</string>
+    <string name="wi_fi_direct_not_supported_fail_reason">Wi-Fi Direct is not supported on this device</string>
     <string name="framework_is_busy_fail_reason">Framework is busy and unable to service the request</string>
     <string name="no_service_requests_fail_reason">No service requests are added</string>
     <string name="unknown_error_fail_reason">Unknown error occurred</string>

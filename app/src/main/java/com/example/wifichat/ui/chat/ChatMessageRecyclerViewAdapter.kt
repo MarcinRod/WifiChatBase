@@ -8,7 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.wifichat.databinding.MessageViewHolderBinding
 import com.example.wifichat.model.ChatMessage
 
-
+/**
+ * Adapter for the RecyclerView displaying the chat messages
+ * The owner of the adapter is used to differentiate the messages in the adapter
+ */
 class ChatMessageRecyclerViewAdapter :
     ListAdapter<ChatMessage, ChatMessageRecyclerViewAdapter.ViewHolder>(Comparator) {
     // Variable holding the name of the owner of this adapter -

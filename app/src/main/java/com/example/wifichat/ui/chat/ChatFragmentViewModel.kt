@@ -26,6 +26,11 @@ import java.net.ServerSocket
 import java.net.Socket
 import java.nio.ByteBuffer
 
+/**
+ * The ViewModel class for the ChatFragment.
+ * This class is responsible for handling the chat messages and images.
+ * It also manages the connection between the devices.
+ */
 class ChatFragmentViewModel : ViewModel(),
     WiFiDirectBroadcastReceiver.WifiDirectConnectionListener {
     // create a live data object to store the state of the chat

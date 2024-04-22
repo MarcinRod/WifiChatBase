@@ -10,7 +10,7 @@ import com.example.wifichat.databinding.PeerViewHolderBinding
 
 import com.example.wifichat.helpers.getStatus
 
-
+/** Adapter for the RecyclerView displaying the list of peers discovered by the device */
 class PeersRecyclerViewAdapter :
     ListAdapter<WifiP2pDevice, PeersRecyclerViewAdapter.ViewHolder>(Comparator) {
     // An object used to determine if two items represent the same WifiP2pDevice object

@@ -89,7 +89,9 @@ class MainActivity : AppCompatActivity(), WifiStateReceiver.WifiStateListener,
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
     }
+    private fun setupWifi(){
 
+    }
 
     // Method to intercept the WiFi state change when the WiFi is enabled
     override fun onWifiEnabled() {
