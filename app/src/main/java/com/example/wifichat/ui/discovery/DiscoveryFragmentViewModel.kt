@@ -52,7 +52,8 @@ class DiscoveryFragmentViewModel: ViewModel(){
     /**
      * Resets the view model.
      */
-    fun reset() {clear()
+    fun reset() {
+        clear()
     }
     // Override the onCleared method to clear the view model variables when it's is destroyed
     override fun onCleared() {

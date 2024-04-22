@@ -49,9 +49,6 @@ class DiscoveryFragment : Fragment(), WiFiDirectBroadcastReceiver.WifiDirectPeer
     // Adapter for the RecyclerView
     private val peersAdapter = PeersRecyclerViewAdapter()
 
-    // Reference to the host activity used to access WifiP2pManager, its Channel and registered
-    // BroadcastReceiver required for the discovery process
-    private val hostActivity by lazy { activity as MainActivity }
 
     // Flag used to indicate whether listeners have been set for the WifiDirectBroadcastReceiver
     private var wifiIsSetup = false
@@ -138,7 +135,18 @@ class DiscoveryFragment : Fragment(), WiFiDirectBroadcastReceiver.WifiDirectPeer
      * Start/Stops the animation of the discovery icon
      */
     private fun toggleDiscoveryIcon(on: Boolean) {
-
+        // We enclose the code in a try-catch block to handle
+        // the case when the drawable is not an AnimatedVectorDrawable (this should not happen)
+        try {
+            (binding.discoveryStarted.drawable as AnimatedVectorDrawable).apply {
+                if (on)
+                    start()
+                else
+                    stop()
+            }
+        } catch (e: Exception) {
+            Log.e("DiscoveryFragment", "Error: ${e.message}")
+        }
     }
 
     /**

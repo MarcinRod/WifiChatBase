@@ -47,9 +47,6 @@ class ChatFragment : Fragment() {
     // The adapter for the RecyclerView displaying the chat messages
     private val chatAdapter = ChatMessageRecyclerViewAdapter()
 
-    // Reference to the host activity used to get the WifiP2pManager and Channel objects
-    private val hostActivity by lazy { activity as MainActivity }
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
